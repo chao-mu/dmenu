@@ -10,7 +10,7 @@ import (
 // and passing provided args. The return value is the selection (which is whatever
 // the user inputs in the case a menu item is not found), whether or not the
 // selection is found in menuItems, and an error.
-func Dmenu(menuItems []string, args ...string) (selection string, found bool, err error) {
+func Run(menuItems []string, args ...string) (selection string, found bool, err error) {
 	cmd := exec.Command("dmenu", args...)
 
 	stdinPipe, err := cmd.StdinPipe()
