@@ -54,7 +54,7 @@ func Dmenu(menuItems []string, args ...string) (selection string, found bool, er
 	selection = strings.TrimSuffix(string(cmdOutput), "\n")
 
 	// Detect if the selection was in the menuItems
-	for _, item := range args {
+	for _, item := range menuItems {
 		if item == selection {
 			found = true
 			break
