@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-// Dmenu launches the dmenu command, piping in menuItems (separated by newlines)
+// Run launches the dmenu command, piping in menuItems (separated by newlines)
 // and passing provided args. The return value is the selection (which is whatever
 // the user inputs in the case a menu item is not found), whether or not the
 // selection is found in menuItems, and an error.
